@@ -86,5 +86,8 @@ int main()
 
     cout << "Your number + 5 is: " << n << endl;
 
+    unsigned long long tsc = __rdtsc();
+    std::cout << "5. CPU TSC (__rdtsc): " << tsc % 10000 << "\n";
+
     return 0;
 }
